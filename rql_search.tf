@@ -1,6 +1,6 @@
 resource "prismacloud_saved_search" "example" {
     name = "TF - EC2 Volumes are unencrypted"
-    description = "Made by Terraform"
+    description = "TF - EC2 Volumes are unencrypted"
     search_id = prismacloud_rql_search.x.search_id
     query = prismacloud_rql_search.x.query
     time_range {
