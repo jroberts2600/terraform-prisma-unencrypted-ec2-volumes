@@ -1,5 +1,5 @@
 resource "prismacloud_saved_search" "example_search" {
-    name = "TF - Example Saved Search - ${random_string.suffix}"
+    name = "TF - Example Saved Search - foo"
     description = "TF - Example Saved Search"
     search_id = prismacloud_rql_search.x.search_id
     query = prismacloud_rql_search.x.query
