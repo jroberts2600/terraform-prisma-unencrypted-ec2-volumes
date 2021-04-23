@@ -1,6 +1,6 @@
-resource "prismacloud_saved_search" "example" {
-    name = "Made by Terraform"
-    description = "made by terraform"
+resource "prismacloud_saved_search" "example_search" {
+    name = "TF - Example Saved Search"
+    description = "TF - Example Saved Search"
     search_id = prismacloud_rql_search.x.search_id
     query = prismacloud_rql_search.x.query
     time_range {
