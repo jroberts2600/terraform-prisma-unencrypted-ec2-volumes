@@ -3,7 +3,7 @@ terraform {
     required_providers {
         prismacloud = {
             source = "PaloAltoNetworks/prismacloud"
-            version = "1.1.1"
+            version = "1.1.2"
         }
     }
 }
