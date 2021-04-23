@@ -4,8 +4,8 @@ resource "random_string" "suffix" {
 }
 
 resource "prismacloud_saved_search" "example_search" {
-    name = "TF - Example Saved Search $random_string"
-    description = "TF - Example Saved Search $random_string"
+    name = "TF - Example Saved Search - ${random_string}"
+    description = "TF - Example Saved Search"
     search_id = prismacloud_rql_search.x.search_id
     query = prismacloud_rql_search.x.query
     time_range {
