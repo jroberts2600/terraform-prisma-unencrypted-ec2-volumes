@@ -16,9 +16,3 @@ provider "prismacloud" {
     password = var.pc_secret_key
     protocol = "https"
 }
-
-# Set random string for use to unique names
-resource "random_string" "suffix" {
-    length  = 8
-    special = false
-}
