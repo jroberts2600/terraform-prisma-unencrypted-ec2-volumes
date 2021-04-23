@@ -13,7 +13,7 @@ resource "prismacloud_saved_search" "example_search" {
 
 resource "prismacloud_rql_search" "x" {
     search_type = "config"
-    query = "config from cloud.resource where api.name = 'aws-ec2-describe-instances'"
+    query = "config from cloud.resource where cloud.type = 'aws' AND api.name = 'aws-ec2-describe-volumes' AND json.rule = 'encrypted is false'"
     time_range {
         relative {
             unit = "hour"
