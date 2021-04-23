@@ -1,6 +1,11 @@
+resource "random_string" "suffix" {
+  length  = 8
+  special = false
+}
+
 resource "prismacloud_saved_search" "example_search" {
-    name = "TF - Example Saved Search"
-    description = "TF - Example Saved Search"
+    name = "TF - Example Saved Search $random_string"
+    description = "TF - Example Saved Search $random_string"
     search_id = prismacloud_rql_search.x.search_id
     query = prismacloud_rql_search.x.query
     time_range {
