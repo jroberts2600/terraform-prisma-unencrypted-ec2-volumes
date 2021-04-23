@@ -1,8 +1,3 @@
-resource "random_string" "suffix" {
-  length  = 8
-  special = false
-}
-
 resource "prismacloud_saved_search" "example_search" {
     name = "TF - Example Saved Search - 3hf78"
     description = "TF - Example Saved Search"
