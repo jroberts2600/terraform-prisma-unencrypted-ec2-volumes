@@ -1,6 +1,6 @@
 resource "prismacloud_saved_search" "example" {
-    name = "TF - EC2 Volumes are unencrypted"
-    description = "TF - EC2 Volumes are unencrypted"
+    name = "Made by Terraform"
+    description = "made by terraform"
     search_id = prismacloud_rql_search.x.search_id
     query = prismacloud_rql_search.x.query
     time_range {
@@ -13,7 +13,7 @@ resource "prismacloud_saved_search" "example" {
 
 resource "prismacloud_rql_search" "x" {
     search_type = "config"
-    query = "config from cloud.resource where cloud.type = 'aws' AND api.name = 'aws-ec2-describe-volumes' AND json.rule = 'encrypted is false'"
+    query = "config from cloud.resource where api.name = 'aws-ec2-describe-instances'"
     time_range {
         relative {
             unit = "hour"
