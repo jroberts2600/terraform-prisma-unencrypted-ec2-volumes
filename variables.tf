@@ -12,4 +12,3 @@ variable "pc_access_key" {
     type = string
     description = "Prisma Cloud Access Key"
 }
-
