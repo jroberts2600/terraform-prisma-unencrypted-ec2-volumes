@@ -1,4 +1,4 @@
-resource "prismacloud_saved_search" "example_search" {
+resource "prismacloud_saved_search" "uv_ss" {
     name = "TF - Unencrypted EC2 Volumes"
     description = "Unencrypted EC2 Volumes - Managed by Terraform"
     search_id = prismacloud_rql_search.uv_rql.search_id
