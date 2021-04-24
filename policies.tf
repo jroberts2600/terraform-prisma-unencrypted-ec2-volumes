@@ -5,7 +5,7 @@ resource "prismacloud_policy" "uv_policy" {
   severity = "low"
   cloud_type = "aws"
   rule {
-    name = "test_policy"
+    name = "Unencrypted EC2 Volumes"
     criteria = prismacloud_saved_search.uv_ss.search_id
     parameters = {
       "savedSearch": "true",
