@@ -1,7 +1,7 @@
 resource "prismacloud_policy" "uv_policy" {
-  name = "test_policy"
+  name = "TF - Unencrypted EC2 Volumes"
   policy_type = "config"
-  description = "Unencrypted EC2 Volumes - TF Managed"
+  description = "Unencrypted EC2 Volumes - Managed by Terraform"
   severity = "low"
   cloud_type = "aws"
   rule {
