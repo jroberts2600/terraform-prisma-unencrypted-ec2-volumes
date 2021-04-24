@@ -16,3 +16,8 @@ provider "prismacloud" {
     password = var.pc_secret_key
     protocol = "https"
 }
+
+resource "random_string" "suffix" {
+  length  = 8
+  special = false
+}
