@@ -1,5 +1,5 @@
 resource "prismacloud_saved_search" "uv_ss" {
-    name = "TF - Unencrypted EC2 Volumes"
+    name = "TF - Unencrypted EC2 Volumes - $${random_string.suffix}"
     description = "Unencrypted EC2 Volumes - Managed by Terraform"
     search_id = prismacloud_rql_search.uv_rql.search_id
     query = prismacloud_rql_search.uv_rql.query
