@@ -1,5 +1,5 @@
 resource "prismacloud_policy" "uv_policy" {
-  name = "Unencrypted EC2 Volumes - TF-${random_string.suffix.result}"
+  name = "Unencrypted EC2 Volumes -TF- ${random_string.suffix.result}"
   policy_type = "config"
   description = "Unencrypted EC2 Volumes - Managed by Terraform"
   severity = "low"
